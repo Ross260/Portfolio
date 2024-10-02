@@ -3,20 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media/bootstrap/css/bootstrap.min.css">
     <title>Portfolio</title>
 
     <style>
-        h1{
-            color: blue;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .timer-container {
+            text-align: center;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timer-display {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .controls button {
+            margin: 5px;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #leCol1{
+            border-radius: 500px;
+            background-color: aqua;
+        }
+        #leCol2{
+            border-radius: 500px;
+            background-color: aqua;
         }
     </style>
 
 </head>
 <body>
     
-    <h1>Portfolio</h1>
+    <div class="container mt-5">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" style="text-align: center;">
+                    <h1 class="mt-4">Comming soon </h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>            
+        </div>
 
-    <p>Présentation de mes projets</p>
+        
+        <div class="container-fluid">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-3" id="leCol1"></div>
+                <div class="col-md-6">
+                    <p>We're working hard on something amazing! Stay tuned for updates.</p>
+                </div>
+                <div class="col-md-3" id="leCol2"></div>
+            </div>
+        </div>
 
+        <!-- Minuteur -->
+        
+        <div class="container-fluid">
+            <div class="row ml-2">
+                <div class="col-md-3 colgauche"></div>
+    
+                <div class="col-md-6 ml-5">
+                    <div class="timer-container">
+                        <!-- Form for setting the timer -->
+                        <h3> Timer</h3>
+                        <div class="timer-display" id="timer-display">24:00:00</div>
+                            <form id="timer-form" class="mb-3">
+                                <div class="mb-3">
+                                    <input type="hidden" id="hours" class="form-control" placeholder="Set hours" min="0" value="23">
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <input type="hidden" id="minutes" class="form-control" placeholder="Set minutes" min="0" value="59">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="hidden" id="seconds" class="form-control" placeholder="Set seconds" min="0" value="59">
+                                </div>
+                            
+                            
+                                <input type="submit" id="But" class="btn btn-primary" style="margin-top: 100px; float: left; background-color: #f8f9fa; border: #f8f9fa;" value="" >
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 coldroit"></div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+<script src="script.js"></script>
+<script src="media/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
