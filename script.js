@@ -12,9 +12,9 @@
             return `${h}:${m}:${s}`;
         }
 
-        // Attendre que la page soit complètement chargée
+        // Wait for the page load absolutly
         window.addEventListener('DOMContentLoaded', function() {
-            // Simuler un clic sur le bouton submit après le chargement de la page
+            // Stmulate a click on the submit button after the load page
             document.getElementById('But').click();
         });
 
