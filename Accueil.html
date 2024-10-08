@@ -14,7 +14,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-  <a class="navbar-brand" href="#Ross">Ross</a>
+  <a class="navbar-brand" style="color: aliceblue;" href="#Ross">Ross</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -38,16 +38,37 @@
 
 <!-- Header Section -->
 <section class="header-section" id="Ross">
-  <h1>Welcome to My Website</h1>
+
+        <div class="flex-contain"> <!-- Mon flex contain pour appliquer le display flex-->
+            <div class="div1-flex">
+                <p class="firstp">Bonjour,<br> je suis  <b style="color: greenyellow;">KETCHA Ross Gildas</b><br> Développeur Web
+                    <b class="leH1" style="color: greenyellow;"></b>
+                </p>
+                <div class="btn btn-success" style="margin: 40px 40px;">Télécharger mon CV</div>
+            </div>
+            <div class="div2-flex" style="margin-left: 50px;">
+                <img src="images/cube.png" style="border-radius: 50px;">
+            </div>
+        </div>  
+
 </section>
 
 <!-- Content Section -->
 <section class="content-section" id="about">
-  <div class="container">
-    <h2>A propos de moi</h2>
-    <p>
-      This is an example of a page with a dynamic navbar. Scroll down to see how the navbar style changes.
-    </p>
+    <div class="container">
+        <h2>A propos de moi</h2>
+        <p> Salut, je suis Ross Gildas KETCHA. Bienvenue sur mon portfolio ! </p><br>
+
+        <p>
+            Je suis un développeur web passionné, spécialisé dans la création d'applications web dynamiques et conviviales.
+            À travers ce portfolio, je souhaite vous présenter mes compétences, mes projets et mon expérience. 
+        </p>
+
+        <p><br>
+            Je suis étudiant en Bachelor Concepteur développeur d’application à ECE école d’ingénieur à Paris.
+            Motivé par l'apprentissage des différentes technologies et des langages de programmation,
+            je suis à la recherche d'une entreprise dynamique où je pourrais effectuer une alternance enrichissante.
+        </p><br>
   </div>
 </section>
 
@@ -110,6 +131,33 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('navbar-scrolled');
     }
 });
+
+ // JavaScript pour l'animation de texte typé
+ document.addEventListener('DOMContentLoaded', function () {
+      const typedStrings = ["Frontend", "Backend", "Full Stack"];
+      const typedElement = document.querySelector('.leH1');
+      
+      if (typedElement) {
+        let charIndex = 0;
+        let stringIndex = 0;
+        let typingEffect = setInterval(type, 250);
+
+        function type() {
+          if (stringIndex === typedStrings.length) {
+            stringIndex = 0;
+          }
+
+          if (charIndex < typedStrings[stringIndex].length) {
+            typedElement.textContent += typedStrings[stringIndex].charAt(charIndex);
+            charIndex++;
+          } else {
+            charIndex = 0;
+            stringIndex++;
+            typedElement.textContent = '';
+          }
+        }
+      }
+    });
 </script>
 
 </body>

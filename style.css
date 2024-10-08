@@ -7,12 +7,13 @@
 
 .navbar-scrolled {
     background-color: #333;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(59, 115, 178, 0.3);
 }
 
 .navbar-custom .nav-link {
     color: white;
     transition: color 0.5s ease;
+    font-size: 20px;
 }
 
 .navbar-scrolled .nav-link {
@@ -22,11 +23,12 @@
 /* Full-height initial section */
 .header-section {
     height: 100vh;
-    background-color: #333;
+    background-color: #6239e8;
     color: white;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    
 }
 
 /* Some content section to scroll */
@@ -36,6 +38,8 @@
     padding: 40px;
 }
 
+
+/* HEADER */
 h1 {
     font-size: 4rem;
 }
@@ -43,3 +47,30 @@ h1 {
 p {
     font-size: 1.2rem;
 }
+
+.firstp{
+    font-size: 40px;
+}
+
+.flex-contain{
+    display: flex;
+    padding: 20px;
+    margin-left: 30px;
+    justify-content: space-around;
+ 
+}
+
+.leH1{
+    font-size: 50px;
+}
+
+
+.div1-flex {
+    width: 50vw; /*la div sur la moitier de la largeur de l'écran*/
+}
+
+.div2-flex {
+    /* background-color: lightgreen; Pour visualiser div2 */
+}
+
+
