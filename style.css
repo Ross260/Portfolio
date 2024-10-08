@@ -1,0 +1,45 @@
+
+/* Initial Navbar and Section Style */
+.navbar-custom {
+    background-color: transparent;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.navbar-scrolled {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.navbar-scrolled .nav-link {
+    color: #f2f2f2;
+}
+
+/* Full-height initial section */
+.header-section {
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Some content section to scroll */
+.content-section {
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
