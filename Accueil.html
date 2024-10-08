@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Navbar</title>
     <!-- Bootstrap CSS -->
     <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-  <a class="navbar-brand" href="#">BrandName</a>
+  <a class="navbar-brand" href="#Ross">Ross</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#about">A propos de moi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#tools">Outils</a>
+      </li>
+      <li class="nav-item"></li>
+        <a class="nav-link" href="#projects">Projets</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <!-- Header Section -->
-<section class="header-section">
+<section class="header-section" id="Ross">
   <h1>Welcome to My Website</h1>
 </section>
 
 <!-- Content Section -->
-<section class="content-section">
+<section class="content-section" id="about">
   <div class="container">
-    <h2>About Us</h2>
+    <h2>A propos de moi</h2>
     <p>
       This is an example of a page with a dynamic navbar. Scroll down to see how the navbar style changes.
     </p>
@@ -51,13 +52,36 @@
 </section>
 
 <!-- More Content -->
-<section class="content-section">
+<section class="content-section" id="tools">
   <div class="container">
-    <h2>Services</h2>
+    <h2>Outils</h2>
     <p>Here we offer great services that you will love!</p>
   </div>
 </section>
 
+<!-- More Content -->
+<section class="content-section" id="projects">
+    <div class="container">
+      <h2>Mes Projets</h2>
+      <p>Here we offer great services that you will love!</p>
+    </div>
+  </section>
+
+  <!-- More Content -->
+<section class="content-section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Here we offer great services that you will love!</p>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- a gerer -->
 <!-- Footer -->
 <footer class="content-section">
   <div class="container">
@@ -65,7 +89,10 @@
   </div>
 </footer>
 
-<!-- Bootstrap JS and dependencies -->
+
+
+
+
  <!-- <script src="script.js"></script> -->
 <script src="media/jquery/jquery-3.4.1.min.js"></script>
 <script src="media/popper/popper.min.js"></script>
