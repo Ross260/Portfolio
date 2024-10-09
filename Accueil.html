@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
@@ -58,7 +59,7 @@
 
 
 <!-- Content Section -->
-<section class="content-section" id="about">
+<section class="content-section" data-aos="fade-up" id="about">
     <div class="container mt-5">
 
         <h2 class="text-center mb-5">A propos de moi</h2>
@@ -80,25 +81,45 @@
 
 
 <!-- Outils utiliser  -->
-<section class="content-section" id="tools">
-  <div class="container mt-5" style="margin: 0;">
-    <h2 class="text-center mb-5">Outils</h2>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="/images/equipement.jpg" class="img-fluid" alt="Dev_tools">
-            </div>
-            <div class="col-md-6">
-                <p class="text-center" style="font-size: 20px;color:  #6239e8;"><b>Outils utilisés</b></p>
-                <a href="test.html">YO !</a>
-            </div>
-        </div>
+
+<section class="content-section-fluid" data-aos="fade-right" id="tools">
+    <div class="container mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                  <h2 class="text-center">Outils</h2>
+                  <img src="/images/equipement.jpg" class="img-fluid mb-5" alt="Dev_tools">
+              </div>
+              <div class="col-md-6 divDesDiv mt-5">
+                  <p class="text-center mt-5" style="font-size: 20px;color:  #6239e8;"><b>Outils utilisés</b></p>
+                  <img src="/images/vscode.png" class="img-fluid" alt="">
+                  <img src="/images/codeblocks.png"  class="img-fluid" alt="">
+                  <img src="/images/eclipse.PNG" class="img-fluid" alt="">
+                  <img src="/images/Figma.PNG" class="img-fluid" alt="">
+                  <img src="/images/github.PNG" class="img-fluid" alt=""> 
+                  <img src="/images/mysqlworkbench.PNG" class="img-fluid" alt=""> 
+                  <img src="/images/pycharm.PNG" class="img-fluid" alt=""> 
+                  <p class="text-center mt-5" style="font-size: 20px;color:  #6239e8;"><b>Langages de programmation</b></p>
+                  <img src="/images/html.png" class="img-fluid" alt="">
+                  <img src="/images/CSS.png"  class="img-fluid" alt="">
+                  <img src="/images/javascript.png" class="img-fluid" alt="">
+                  <img src="/images/bootstrap.png" class="img-fluid" alt="">
+                  <img src="/images/php.png" class="img-fluid" alt=""> 
+                  <img src="/images/sql.png" class="img-fluid" alt=""> 
+                  <img src="/images/c.PNG" class="img-fluid" alt=""> 
+                  <img src="/images/Cpp.PNG" class="img-fluid" alt=""> 
+                  <img src="/images/java.PNG" class="img-fluid" alt=""> 
+                  <img src="/images/python.PNG" class="img-fluid" alt=""> 
+
+
+              </div>
+          </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- More Content -->
-<section class="content-section" id="projects">
+<section class="content-section" data-aos="fade-up"  id="projects">
     <div class="container mt-5">
       <h2>Mes Projets</h2>
       <p>Here we offer great services that you will love!</p>
@@ -106,7 +127,7 @@
   </section>
 
   <!-- More Content -->
-<section class="content-section" id="contact">
+<section class="content-section" data-aos="zoom-in" id="contact">
     <div class="container mt-5">
       <h2>Contact</h2>
       <p>Here we offer great services that you will love!</p>
@@ -130,6 +151,12 @@
 
 
 
+<!-- Lien vers le fichier JavaScript AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialiser AOS pour déclencher les animations au scroll
+    AOS.init();
+</script>
 
  <!-- <script src="script.js"></script> -->
 <script src="media/jquery/jquery-3.4.1.min.js"></script>

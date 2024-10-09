@@ -36,11 +36,13 @@
 
 /* Some content section to scroll */
 .content-section {
-    height: 70vh;
+    height: 60vh;
     background-color: #f7f7f7;
     padding: 40px;
 }
-
+#about{
+    margin: O;
+}
 
 /* HEADER */
 h1 {
@@ -136,7 +138,7 @@ p {
 content outside the header
 ---------------------------------- */
 body{
-    background-color: bisque;
+    background-color: white;
 }
 
 h2{
@@ -148,3 +150,10 @@ h2{
  
   /* About me */
 
+  /* Tools */
+ 
+  .divDesDiv > img{
+    height: 5Opx;
+    width: 70px;
+    margin-left: 30px;
+  }
