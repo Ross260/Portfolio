@@ -12,60 +12,65 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<header>
+    <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-  <a class="navbar-brand" style="color: aliceblue;" href="#Ross">Ross</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#about">A propos de moi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#tools">Outils</a>
-      </li>
-      <li class="nav-item"></li>
-        <a class="nav-link" href="#projects">Projets</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <a class="navbar-brand" style="color: aliceblue;" href="#Ross">Ross</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">A propos de moi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tools">Outils</a>
+        </li>
+        <li class="nav-item"></li>
+          <a class="nav-link" href="#projects">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Header Section -->
+  <section class="header-section" id="Ross">
+  
+          <div class="flex-contain"> <!-- Mon flex contain pour appliquer le display flex-->
+              <div class="div1-flex">
+                  <p class="firstp">Bonjour,<br> je suis  <b style="color: greenyellow;">KETCHA Ross Gildas</b><br> Développeur Web
+                      <b class="leH1" style="color: greenyellow;"></b>
+                  </p>
+                  <div class="btn section-btn btn-outline-success" style="margin: 40px 40px;">Télécharger mon CV</div>
+                    
+              </div>
+              <div class="div2-flex" style="margin-left: 50px;">
+                  <img src="images/cube.png" class="img-fluid" style="border-radius: 50px;">
+              </div>
+          </div>  
+  
+  </section>    
+</header>
 
-<!-- Header Section -->
-<section class="header-section" id="Ross">
-
-        <div class="flex-contain"> <!-- Mon flex contain pour appliquer le display flex-->
-            <div class="div1-flex">
-                <p class="firstp">Bonjour,<br> je suis  <b style="color: greenyellow;">KETCHA Ross Gildas</b><br> Développeur Web
-                    <b class="leH1" style="color: greenyellow;"></b>
-                </p>
-                <div class="btn section-btn btn-outline-success" style="margin: 40px 40px;">Télécharger mon CV</div>
-
-            </div>
-            <div class="div2-flex" style="margin-left: 50px;">
-                <img src="images/cube.png" class="img-fluid" style="border-radius: 50px;">
-            </div>
-        </div>  
-
-</section>
 
 <!-- Content Section -->
 <section class="content-section" id="about">
-    <div class="container">
-        <h2>A propos de moi</h2>
-        <p> Salut, je suis Ross Gildas KETCHA. Bienvenue sur mon portfolio ! </p><br>
+    <div class="container mt-5">
 
-        <p>
+        <h2 class="text-center mb-5">A propos de moi</h2>
+
+        <p class="text-center"> Salut, je suis Ross Gildas KETCHA. Bienvenue sur mon portfolio ! </p><br>
+
+        <p class="text-center">
             Je suis un développeur web passionné, spécialisé dans la création d'applications web dynamiques et conviviales.
             À travers ce portfolio, je souhaite vous présenter mes compétences, mes projets et mon expérience. 
         </p>
 
-        <p><br>
+        <p class="text-center"><br>
             Je suis étudiant en Bachelor Concepteur développeur d’application à ECE école d’ingénieur à Paris.
             Motivé par l'apprentissage des différentes technologies et des langages de programmation,
             je suis à la recherche d'une entreprise dynamique où je pourrais effectuer une alternance enrichissante.
@@ -73,17 +78,22 @@
   </div>
 </section>
 
-<!-- More Content -->
+
+<!-- Outils utiliser  -->
 <section class="content-section" id="tools">
-  <div class="container">
+  <div class="container mt-5">
     <h2>Outils</h2>
-    <p>Here we offer great services that you will love!</p>
+    <div class="container-fluid">
+        <div class="row">
+            .col-
+        </div>
+    </div>
   </div>
 </section>
 
 <!-- More Content -->
 <section class="content-section" id="projects">
-    <div class="container">
+    <div class="container mt-5">
       <h2>Mes Projets</h2>
       <p>Here we offer great services that you will love!</p>
     </div>
@@ -91,7 +101,7 @@
 
   <!-- More Content -->
 <section class="content-section" id="contact">
-    <div class="container">
+    <div class="container mt-5">
       <h2>Contact</h2>
       <p>Here we offer great services that you will love!</p>
     </div>
@@ -106,7 +116,7 @@
   <!-- a gerer -->
 <!-- Footer -->
 <footer class="content-section">
-  <div class="container">
+  <div class="container mt-5">
     <p>&copy; 2024 Your Website. All Rights Reserved.</p>
   </div>
 </footer>

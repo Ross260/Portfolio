@@ -1,4 +1,5 @@
 
+
 /* Initial Navbar and Section Style */
 .navbar-custom {
     background-color: transparent;
@@ -33,7 +34,7 @@
 
 /* Some content section to scroll */
 .content-section {
-    height: 40vh;
+    height: 70vh;
     background-color: #f7f7f7;
     padding: 40px;
 }
@@ -69,16 +70,41 @@ p {
     width: 50vw; /*la div sur la moitier de la largeur de l'écran*/
 }
 
-.div2-flex {
-    /* background-color: lightgreen; Pour visualiser div2 */
-}
-
+/* animation sur le bouton de telechargement du CV */
+.section-btn {
+    animation: wiggle 4s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 
 .section-btn:hover,
 .section-btn:focus {
     background:rgb(231, 110, 44);
     border-color: transparent;
-    color: #6239e8;
+    color: #fff;
     border-radius: 20px;
 
     width: 240px;
@@ -100,26 +126,23 @@ p {
     position: relative;
     transition: all 1s;
     overflow: hidden;
-  }
+}
   
-  .btn:hover {
-    color: white;
-  }
-  
-  .btn::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: -40px;
-    transform: skewX(45deg);
-    background-color: purple;
-    z-index: -1;
-    transition: all 1s;
-  }
-  
-  .btn:hover::before {
-    width: 160%;
-  }
-  
+
+
+/* ---------------------------------- 
+content outside the header
+---------------------------------- */
+body{
+    background-color: bisque;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #6239e8;
+}
+ 
+  /* About me */
+
