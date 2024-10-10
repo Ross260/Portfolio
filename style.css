@@ -11,6 +11,7 @@
 .navbar-scrolled {
     background-color: #3c3b3e;
     box-shadow: 0 4px 10px rgba(59, 115, 178, 0.3);
+    opacity: 0.9;
 }
 
 .navbar-custom .nav-link {
@@ -26,7 +27,8 @@
 /* Full-height initial section */
 .header-section {
     height: 100vh;
-    background-color: #6239e8;
+    /* background-color: #6239e8; */
+    background: linear-gradient(35deg, #6239e8, #892fde); /* Dégradé du rouge vers l'orange */
     color: white;
     display: flex;
     /* justify-content: center; */
@@ -255,7 +257,7 @@ h2{
 
   /* Footer */
   .content-section-footer{
-    height: 100px;
+    height: auto;
     width: auto;
     background: #3c3b3e;
   }
