@@ -241,3 +241,8 @@ h2{
     color: #6239e8;
     font-size: 20px;
   }
+
+  #contact{
+    background: linear-gradient(35deg, #aee0f1, #cdc3ed); /* Dégradé du rouge vers l'orange */
+    margin-bottom: 20px;
+  }
