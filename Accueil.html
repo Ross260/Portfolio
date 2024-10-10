@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Navbar</title>
+    <title>Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -128,7 +128,7 @@
                         <div class="bg">
                           <img src="./images/projet1.png" alt="Gestion des clients" srcset="">
                           <p class="mb-4">Java</p>
-                          <button type="button" class="btn btn-primary">En savoir plus</button>
+                          <button type="button" class="btn btn-primary">En savoir plus...</button>
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -139,9 +139,9 @@
                         <div class="bg">
                             <img src="./images/projet2.png" class="img-fluid" alt="projet2" srcset="">
                             <p style="font-size: 20px;" class="mb-5">Python Tkinter</p>
-                            <button type="button" class="btn btn-primary">En savoir plus</button>
+                            <button type="button" class="btn btn-primary">En savoir plus...</button>
                         </div>
-                        <div class="blob">comment tu vas ?</div>
+                        <div class="blob"></div>
                     </div>
                 </div>
 
@@ -150,7 +150,7 @@
                         <div class="bg">
                             <img src="./images/pharma.png" class="img-fluid" alt="projet3" srcset="">
                             <p style="font-size: 15px;">HTML, CSS, JS, Bootstrap, PHP, SQL</p>
-                            <button type="button" class="btn btn-primary">En savoir plus</button>
+                            <button type="button" class="btn btn-primary">En savoir plus...</button>
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -162,24 +162,62 @@
   </section>
 
   <!-- More Content -->
-<section class="content-section" data-aos="zoom-in" id="contact">
+<section class="content-section-fluid" data-aos="zoom-in" id="contact">
     <div class="container mt-5">
-      <h2>Contact</h2>
-      <p>Here we offer great services that you will love!</p>
+      <h2 class="mb-5">Contact</h2>
+
+      <div class="container-fluid">
+        <!-- Le Formulaire -->
+        <form>
+          <div class="row mb-3">
+              <!-- Champ pour le prénom -->
+              <div class="col-md-6">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+              </div>
+          </div>
+
+          <div class="row mb-3">
+
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
+            </div>
+          
+          </div>
+          
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+          </div>
+
+          <!-- Bouton de soumission -->
+          <div class="d-grid gap-2 col-6 mx-auto">
+              <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+          </div>
+        </form>
+      </div>
     </div>
 </section>
 
 
 
-
-
-
-
   <!-- a gerer -->
 <!-- Footer -->
-<footer class="content-section-fluid">
+<footer class="content-section">
   <div class="container mt-5">
-    <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+    <!-- <p>&copy; 2024 Your Website. All Rights Reserved.</p> -->
+     <p>Le <footer></footer></p>
   </div>
 </footer>
 
@@ -192,6 +230,7 @@
     // Initialiser AOS pour déclencher les animations au scroll
     AOS.init();
 </script>
+
 
  <!-- <script src="script.js"></script> -->
 <script src="media/jquery/jquery-3.4.1.min.js"></script>

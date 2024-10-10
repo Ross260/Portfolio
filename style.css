@@ -235,3 +235,9 @@ h2{
   .bg > img{
     width: 200px;
   }
+
+  /* Contact */
+  label{
+    color: #6239e8;
+    font-size: 20px;
+  }
