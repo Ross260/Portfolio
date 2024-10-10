@@ -243,6 +243,31 @@ h2{
   }
 
   #contact{
-    background: linear-gradient(35deg, #aee0f1, #cdc3ed); /* Dégradé du rouge vers l'orange */
-    margin-bottom: 20px;
+    background: linear-gradient(35deg, #f3fbfd, #f6f4ff); /* Dégradé du rouge vers l'orange */
+ 
   }
+
+  /* Footer */
+  .content-section-footer{
+    height: 100px;
+    width: auto;
+    background: #3c3b3e;
+  }
+
+  .navbar-nav-footer {
+    list-style-type: none; /* Supprimer les puces de liste */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Pour aligner les items en ligne */
+  }
+
+  .navbar-nav-footer .nav-item {
+    margin-right: 15px; /* Ajouter un espace entre les éléments */
+    font-size: 20px;
+  }
+  .navbar-nav-footer .nav-item .nav-link{
+    color: #785def;
+  }
+
+
+

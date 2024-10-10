@@ -1,116 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="media/bootstrap/css/bootstrap.min.css">
     <title>Portfolio</title>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
-        }
-
-        .timer-container {
-            text-align: center;
-            max-width: 400px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .timer-display {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .controls button {
-            margin: 5px;
-        }
-
-        p{
-            font-size: 20px;
-            text-align: center;
-        }
-
-        #leCol1{
-            border-radius: 500px;
-            background-color: aqua;
-        }
-        #leCol2{
-            border-radius: 500px;
-            background-color: aqua;
-        }
-    </style>
-
+    <!-- Bootstrap CSS -->
+    <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
-    
+
+<header>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <a class="navbar-brand" style="color: aliceblue;" href="#Ross">Ross</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">A propos de moi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tools">Outils</a>
+        </li>
+        <li class="nav-item"></li>
+          <a class="nav-link" href="#projects">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Header Section -->
+  <section class="header-section" id="Ross">
+  
+          <div class="flex-contain"> <!-- Mon flex contain pour appliquer le display flex-->
+              <div class="div1-flex">
+                  <p class="firstp">Bonjour,<br> je suis  <b style="color: greenyellow;">KETCHA Ross Gildas</b><br> Développeur Web
+                      <b class="leH1" style="color: greenyellow;"></b>
+                  </p>
+                  <a href="./media/CV/CV professionnel de recherche d'alternance Developpeur web .pdf" download >
+                    <div class="btn section-btn btn-outline-success" style="margin: 40px 40px;">
+                      Télécharger mon CV
+                    </div>
+                  </a>
+
+              </div>
+              <div class="div2-flex" style="margin-left: 50px;">
+                  <img src="images/cube.png" class="img-fluid" style="border-radius: 50px;">
+              </div>
+          </div>  
+  
+  </section>    
+</header>
+
+
+<!-- Content Section -->
+<section class="content-section-fluid" data-aos="fade-up" id="about">
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-5">A propos de moi</h2>
+
+        <p class="text-center"> Salut, je suis Ross Gildas KETCHA. Bienvenue sur mon portfolio ! </p><br>
+
+        <p class="text-center">
+            Je suis un développeur web passionné, spécialisé dans la création d'applications web dynamiques et conviviales.
+            À travers ce portfolio, je souhaite vous présenter mes compétences, mes projets et mon expérience. 
+        </p>
+
+        <p class="text-center"><br>
+            Je suis étudiant en Bachelor Concepteur développeur d’application à ECE école d’ingénieur à Paris.
+            Motivé par l'apprentissage des différentes technologies et des langages de programmation,
+            je suis à la recherche d'une entreprise dynamique où je pourrais effectuer une alternance enrichissante.
+        </p><br>
+  </div>
+</section>
+
+
+<!-- Outils utiliser  -->
+
+<section class="content-section-fluid" data-aos="fade-right" id="tools">
     <div class="container mt-5">
         <div class="container-fluid">
-            <div class="row ">
-                <div class="col-md-3"></div>
-                <div class="col-md-6" style="text-align: center;">
-                    <h1 class="mt-4">Coming soon </h1>
-                </div>
-                <div class="col-md-3"></div>
-            </div>            
-        </div>
-
-        
-        <div class="container-fluid">
-            <div class="row mt-5 mb-5">
-                <div class="col-md-3" id="leCol1"></div>
+            <div class="row">
                 <div class="col-md-6">
-                    <p>I am working hard on something amazing! Stay tuned for updates.</p>
-                </div>
-                <div class="col-md-3" id="leCol2"></div>
-            </div>
-        </div>
+                  <h2 class="text-center">Outils</h2>
+                  <img src="./images/equipement.jpg" class="img-fluid mb-5" alt="Dev_tools">
+              </div>
+              <div class="col-md-6 divDesDiv mt-5">
+                  <p class="text-center mt-5" style="font-size: 20px;color:  #6239e8;"><b>Outils utilisés</b></p>
+                  <img src="./images/vscode.png" class="img-fluid" alt="vscode">
+                  <img src="./images/codeblocks.png"  class="img-fluid" alt="codeblocks">
+                  <img src="./images/eclipse.PNG" class="img-fluid" alt="eclipse">
+                  <img src="./images/Figma.PNG" class="img-fluid" alt="Figma">
+                  <img src="./images/github.PNG" class="img-fluid" alt="github"> 
+                  <img src="./images/mysqlworkbench.PNG" class="img-fluid" alt="mysqlworkbench"> 
+                  <img src="./images/pycharm.PNG" class="img-fluid" alt="pycharm"> 
+                  <p class="text-center mt-5" style="font-size: 20px;color:  #6239e8;"><b>Langages de programmation</b></p>
+                  <img src="./images/html.png" class="img-fluid" alt="HTML">
+                  <img src="./images/CSS.png"  class="img-fluid" alt="CSS">
+                  <img src="./images/javascript.png" class="img-fluid" alt="JavaScript">
+                  <img src="./images/bootstrap.png" class="img-fluid" alt="Bootstrap">
+                  <img src="./images/php.png" class="img-fluid" alt="PHP"> 
+                  <img src="./images/sql.png" class="img-fluid" alt="SQL"> 
+                  <img src="./images/C.png" class="img-fluid" alt="C"> 
+                  <img src="./images/Cpp.PNG" class="img-fluid" alt="Cpp"> 
+                  <img src="./images/java.PNG" class="img-fluid" alt="Java"> 
+                  <img src="./images/python.PNG" class="img-fluid" alt="python"> 
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Minuteur --> 
+<!-- More Content -->
+<section class="content-section-fluid mb-5" data-aos="fade-up"  id="projects">
+    <div class="container mt-5">
         <div class="container-fluid">
-            <div class="row ml-2">
-                <div class="col-md-3 colgauche"></div>
-    
-                <div class="col-md-6 ml-5">
-                    <div class="timer-container">
-                        <!-- Form for setting the timer -->
-                        <h3> Timer</h3>
-                        <div class="timer-display" id="timer-display">24:00:00</div>
-                            <form id="timer-form" class="mb-3">
-                                <div class="mb-3">
-                                    <input type="hidden" id="hours" class="form-control" placeholder="Set hours" min="0" value="23">
-                                </div>
-                            
-                                <div class="mb-3">
-                                    <input type="hidden" id="minutes" class="form-control" placeholder="Set minutes" min="0" value="59">
-                                </div>
-                                <div class="mb-3">
-                                    <input type="hidden" id="seconds" class="form-control" placeholder="Set seconds" min="0" value="59">
-                                </div>
-                            
-                                <input type="submit" id="But" class="btn btn-primary" style="margin-top: 100px; float: left; background-color: #f8f9fa; border: #f8f9fa;" value="" >
-                            </form>
+            <h2 class="text-center mt-5">Mes Projets</h2>
+            <div class="row cards-row mt-5">
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="bg">
+                          <img src="./images/projet1.png" alt="Gestion des clients" srcset="">
+                          <p class="mb-4">Java</p>
+                          <button type="button" class="btn btn-primary">En savoir plus...</button>
                         </div>
+                        <div class="blob"></div>
                     </div>
                 </div>
-    
-                <div class="col-md-3 coldroit"></div>
-                
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="bg">
+                            <img src="./images/projet2.png" class="img-fluid" alt="projet2" srcset="">
+                            <p style="font-size: 20px;" class="mb-5">Python Tkinter</p>
+                            <button type="button" class="btn btn-primary">En savoir plus...</button>
+                        </div>
+                        <div class="blob"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="bg">
+                            <img src="./images/pharma.png" class="img-fluid" alt="projet3" srcset="">
+                            <p style="font-size: 15px;">HTML, CSS, JS, Bootstrap, PHP, SQL</p>
+                            <button type="button" class="btn btn-primary">En savoir plus...</button>
+                        </div>
+                        <div class="blob"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
     </div>
+  </section>
+
+  <!-- More Content -->
+<section class="content-section-fluid mt-5" style="padding-top: 30px;" data-aos="zoom-in" id="contact">
+    <div class="container mt-5">
+      <h2 class="mb-5 mt-5">Contact</h2>
+
+      <div class="container-fluid">
+        <!-- Le Formulaire -->
+        <form>
+          <div class="row mb-3">
+              <!-- Champ pour le prénom -->
+              <div class="col-md-6">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+              </div>
+          </div>
+
+          <div class="row mb-3">
+
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
+            </div>
+          
+          </div>
+          
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+          </div>
+
+          <!-- Bouton de soumission -->
+           <div class="row">
+
+             <div class="col-md-5"></div>
+             <div class="col-md-3" style="justify-content: center; align-items: center;">
+                 <button type="submit" class="btn btn-primary mb-4">Envoyer</button>
+             </div>
+             <div class="col-md-5"></div>
+
+           </div>
+
+        </form>
+      </div>
+    </div>
+</section>
 
 
-<script src="script.js"></script>
-<script src="media/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Footer -->
+<footer class="content-section-footer">
+  <div class="container">
+     <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-md-3"></div>
+
+          <div class="col-md-6">
+            <ul class="navbar-nav-footer ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">A propos de moi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tools">Outils</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+                <p style="color:aliceblue; font-size: 15px;" class="text-center">&copy; 2024 My Portfolio. All Rights Reserved.</p>
+          </div>
+
+          <div class="col-md-3"></div>
+
+        </div>
+     </div>
+  </div>
+</footer>
+
+
+
+
+        
+
+
+
+
+
+
+
+<!-- Lien vers le fichier JavaScript AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialiser AOS pour déclencher les animations au scroll
+    AOS.init();
+</script>
+
+
+ <!-- <script src="script.js"></script> -->
+<script src="media/jquery/jquery-3.4.1.min.js"></script>
+<script src="media/popper/popper.min.js"></script>
+<script src="media/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    // changer le style de la navbar pendant le scroll
+window.addEventListener('scroll', function() {
+    let navbar = document.querySelector('.navbar');
+    let scrollTop = window.scrollY;
+
+    if (scrollTop > 100) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
+});
+
+ // JavaScript pour l'animation de texte typé
+ document.addEventListener('DOMContentLoaded', function () {
+      const typedStrings = ["Frontend", "Backend", "Full Stack"];
+      const typedElement = document.querySelector('.leH1');
+      
+      if (typedElement) {
+        let charIndex = 0;
+        let stringIndex = 0;
+        let typingEffect = setInterval(type, 250);
+
+        function type() {
+          if (stringIndex === typedStrings.length) {
+            stringIndex = 0;
+          }
+
+          if (charIndex < typedStrings[stringIndex].length) {
+            typedElement.textContent += typedStrings[stringIndex].charAt(charIndex);
+            charIndex++;
+          } else {
+            charIndex = 0;
+            stringIndex++;
+            typedElement.textContent = '';
+          }
+        }
+      }
+    });
+</script>
+
 </body>
 </html>
+end of modification and push on the main page
