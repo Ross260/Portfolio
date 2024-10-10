@@ -9,7 +9,7 @@
 }
 
 .navbar-scrolled {
-    background-color: #333;
+    background-color: #3c3b3e;
     box-shadow: 0 4px 10px rgba(59, 115, 178, 0.3);
 }
 
@@ -33,6 +33,12 @@
     align-items: center;
     
 }
+
+.navbar-toggler {
+  border-color: rgba(106, 103, 103, 0.6); /* Border blanche autour du bouton */
+} 
+
+
 
 /* Some content section to scroll */
 .content-section {
