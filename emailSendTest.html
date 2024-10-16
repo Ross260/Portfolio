@@ -23,6 +23,9 @@
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required><br>
 
+    <label for="numero">numero:</label>
+    <input type="numero" id="numero" name="numero" required><br>
+
     <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea><br>
 
@@ -38,17 +41,19 @@
       // Récupérer les valeurs du formulaire
       const nom = document.getElementById('name').value;
       const email = document.getElementById('email').value;
+      const numero = document.getElementById('numero').value;
       const message = document.getElementById('message').value;
 
       // Configuration de l'email à envoyer via EmailJS
       const templateParams = {
         from_name: nom,
         from_email: email,
+        from_numero:numero,
         message: message
       };
 
       // Envoyer l'email via EmailJS
-      emailjs.send('TON_SERVICE_ID', 'TON_TEMPLATE_ID', templateParams)
+      emailjs.send('service_pxurp4g', 'template_w53adua', templateParams)
         .then(function (response) {
           alert('Email envoyé avec succès !');
         }, function (error) {
