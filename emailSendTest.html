@@ -7,7 +7,7 @@
   <!-- Importer EmailJS SDK -->
   
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    
+
 </script>
 
 
@@ -33,7 +33,7 @@
     <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea><br>
 
-    <button type="submit">Envoyer</button>
+    <input type="submit" id="button" value="Envoyer" >
   </form>
 
   <script>
@@ -47,8 +47,11 @@
       const email = document.getElementById('email').value;
       const numero = document.getElementById('numero').value;
       const message = document.getElementById('message').value;
+      const btn = document.getElementById('button');
 
-      //code permettant de commencer à utiliser EmailJs
+      btn.value = 'Envoie en cours...';
+
+      // code permettant de commencer à utiliser EmailJs
       // (function(){
       //     emailjs.init({
       //       publicKey: "EEDry2HRfDUVp5Lgc",
@@ -68,17 +71,20 @@
       // Envoyer l'email via EmailJS
       emailjs.send('service_pxurp4g', 'template_w53adua', templateParams).then(
         (response) => {
+          btn.value = 'Envoyé';
           console.log('SUCCÈS!', response.status, response.text);
         },
         (error) => {
+          btn.value = 'Envoyé';
           console.log('ÉCHEC...', error);
         },
       );
 
     });
 
-   
-
   </script>
+
+
+
 </body>
 </html>
