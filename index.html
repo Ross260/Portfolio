@@ -138,7 +138,7 @@
                           <img src="./images/projet1.png" alt="Gestion des clients" srcset="">
                           <p class="mb-4">Java</p>
                           
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#first_project_modal">
                             En savoir plus...
                           </button>
 
@@ -152,7 +152,11 @@
                         <div class="bg">
                             <img src="./images/projet2.png" class="img-fluid" alt="projet2" srcset="">
                             <p style="font-size: 20px;" class="mb-5">Python Tkinter</p>
-                            <button type="button" class="btn btn-primary">En savoir plus...</button>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#second_project_modal">
+                              En savoir plus...
+                            </button>
+
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -177,20 +181,48 @@
 
 <!-- ----------------------------------------------------------------- -->
   <!-- The Modal -->
-  <div class="modal fade" id="myModal">
+  <div class="modal fade" id="first_project_modal">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content bg-dark" style="opacity: 0.9;">
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title" style="color: aliceblue;">Gestion des Clients</h4>
           <button type="button" class="close" data-dismiss="modal">×</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
-          <img src="https://i5.walmartimages.com/asr/464e9b58-e6aa-4828-a15c-15ae56db8570_1.8496acf944ba7e08ee4196c91e873aa4.jpeg" height="400px" width="400px" >
+          <i style="color: aliceblue;">Logiciel développé en JAVA donc le but est d'organiser et gérer les informations
+             des clients. L'objectif étant de faciliter l'accès aux données relatives aux clients.</i>
+          <img src="./images/interface_projet1.PNG" height="400px" width="470px" >
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- ----------------------------------------------------------------- -->
+ <!-- ----------------------------------------------------------------- -->
+  <!-- The Modal -->
+  <div class="modal fade" id="second_project_modal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark" style="opacity: 0.9;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: aliceblue;">FastLink</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <i style="color: aliceblue;">Logiciel développé en Python permettant d'accéder en 1 clic à des sites webs précis.</i>
+          <img src="./images/interface_projet2.PNG" height="400px" width="470px" >
         </div>
         
         <!-- Modal footer -->
