@@ -9,6 +9,7 @@
     <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     
 </head>
 <body>
@@ -175,17 +176,17 @@
 
       <div class="container-fluid">
         <!-- Le Formulaire -->
-        <form>
+        <form id="contact-form">
           <div class="row mb-3">
               <!-- Champ pour le prénom -->
               <div class="col-md-6">
                 <label for="nom" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
               </div>
 
               <div class="col-md-6">
                   <label for="prenom" class="form-label">Prénom</label>
-                  <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                  <input type="text" class="form-control" id="fisrt_name" placeholder="Entrez votre prénom" required>
               </div>
 
           </div>
@@ -224,58 +225,6 @@
       </div>
     </div>
 </section>
-
-<script>
-  // Ajouter un événement de soumission du formulaire
-  //configuration
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêcher le rechargement de la page
-
-    // Récupérer les valeurs du formulaire
-    const nom = document.getElementById('name').value;
-    const prenom = document.getElementById('prenom').value;
-    const email = document.getElementById('email').value;
-    const numero = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
-    const btn = document.getElementById('button');
-
-    btn.value = 'Envoie en cours...';
-
-    // code permettant de commencer à utiliser EmailJs
-    // (function(){
-    //     emailjs.init({
-    //       publicKey: "EEDry2HRfDUVp5Lgc",
-    //     });
-    // })();
-
-    //OU 
-
-    emailjs.init('EEDry2HRfDUVp5Lgc');
-    
-    // Configuration de l'email à envoyer via EmailJS
-    const templateParams = {
-      from_name: nom,
-      from_email: email,
-      from_numero:numero,
-      message: message
-    };
-
-    // Envoyer l'email via EmailJS
-    emailjs.send('service_pxurp4g', 'template_w53adua', templateParams).then(
-      (response) => {
-        btn.value = 'Envoyé';
-        console.log('SUCCÈS!', response.status, response.text);
-      },
-      (error) => {
-        btn.value = 'Envoyé';
-        console.log('ÉCHEC...', error);
-      },
-    );
-
-  });
-
-</script>
-
 
 
 <!-- Footer -->
@@ -318,6 +267,59 @@
   </div>
 </footer>
 
+
+<script>
+  // Ajouter un événement de soumission du formulaire
+  //configuration
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêcher le rechargement de la page
+
+    // Récupérer les valeurs du formulaire
+    const nom = document.getElementById('name').value;
+    const prenom = document.getElementById('fisrt_name').value;
+    const email = document.getElementById('email').value;
+    const numero = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    const btn = document.getElementById('button');
+
+    btn.value = 'Envoie en cours...';
+
+
+    // code permettant de commencer à utiliser EmailJs
+    // (function(){
+    //     emailjs.init({
+    //       publicKey: "EEDry2HRfDUVp5Lgc",
+    //     });
+    // })();
+
+    //OU 
+    
+    emailjs.init('EEDry2HRfDUVp5Lgc');
+    
+    // Configuration de l'email à envoyer via EmailJS
+    const templateParams = {
+      from_name: nom,
+      from_first_name: prenom,
+      from_email: email,
+      from_numero:numero,
+      message: message
+    };
+
+    // Envoyer l'email via EmailJS
+    emailjs.send('service_pxurp4g', 'template_w53adua', templateParams).then(
+      (response) => {
+        btn.value = 'Envoyé';
+        console.log('SUCCÈS!', response.status, response.text);
+      },
+      (error) => {
+        btn.value = 'Envoyé';
+        console.log('ÉCHEC...', error);
+      },
+    );
+
+  });
+
+</script>
 
 <!-- Lien vers le fichier JavaScript AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
