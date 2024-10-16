@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
     <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     
 </head>
 <body>
-
+ 
 <header>
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
@@ -174,18 +176,19 @@
 
       <div class="container-fluid">
         <!-- Le Formulaire -->
-        <form>
+        <form id="contact-form">
           <div class="row mb-3">
               <!-- Champ pour le prénom -->
               <div class="col-md-6">
-                  <label for="prenom" class="form-label">Prénom</label>
-                  <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
               </div>
 
               <div class="col-md-6">
-                  <label for="nom" class="form-label">Nom</label>
-                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="fisrt_name" placeholder="Entrez votre prénom" required>
               </div>
+
           </div>
 
           <div class="row mb-3">
@@ -199,7 +202,7 @@
               <label for="phone" class="form-label">Téléphone</label>
               <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
             </div>
-          
+
           </div>
           
           <div class="mb-3">
@@ -212,7 +215,7 @@
 
              <div class="col-md-5"></div>
              <div class="col-md-3" style="justify-content: center; align-items: center;">
-                 <button type="submit" class="btn btn-primary mb-4">Envoyer</button>
+                 <input type="submit" class="btn btn-primary mb-4" id="button" value="Envoyer" >
              </div>
              <div class="col-md-5"></div>
 
@@ -222,7 +225,6 @@
       </div>
     </div>
 </section>
-
 
 
 <!-- Footer -->
@@ -249,7 +251,6 @@
               </li>
             </ul>
                 <p style="color:aliceblue; font-size: 15px;" class="text-center">&copy; 2024 My Portfolio. All Rights Reserved.</p>
-                
           </div>
 
           <div class="col-md-3">
@@ -268,15 +269,6 @@
 
 
 
-
-        
-
-
-
-
-
-
-
 <!-- Lien vers le fichier JavaScript AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -285,50 +277,12 @@
 </script>
 
 
- <!-- <script src="script.js"></script> -->
+<!-- <script src="script.js"></script> -->
+<script src="./script.js"></script>
 <script src="media/jquery/jquery-3.4.1.min.js"></script>
 <script src="media/popper/popper.min.js"></script>
 <script src="media/bootstrap/js/bootstrap.min.js"></script>
 
-<script>
-    // changer le style de la navbar pendant le scroll
-window.addEventListener('scroll', function() {
-    let navbar = document.querySelector('.navbar');
-    let scrollTop = window.scrollY;
 
-    if (scrollTop > 100) {
-        navbar.classList.add('navbar-scrolled');
-    } else {
-        navbar.classList.remove('navbar-scrolled');
-    }
-});
-
- // JavaScript pour l'animation de texte typé
- document.addEventListener('DOMContentLoaded', function () {
-      const typedStrings = ["Frontend", "Backend", "Full Stack"];
-      const typedElement = document.querySelector('.leH1');
-      
-      if (typedElement) {
-        let charIndex = 0;
-        let stringIndex = 0;
-        let typingEffect = setInterval(type, 250);
-
-        function type() {
-          if (stringIndex === typedStrings.length) {
-            stringIndex = 0;
-          }
-
-          if (charIndex < typedStrings[stringIndex].length) {
-            typedElement.textContent += typedStrings[stringIndex].charAt(charIndex);
-            charIndex++;
-          } else {
-            charIndex = 0;
-            stringIndex++;
-            typedElement.textContent = '';
-          }
-        }
-      }
-    });
-</script>
 </body>
 </html>
