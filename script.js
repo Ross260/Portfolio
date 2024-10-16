@@ -1,54 +1,91 @@
+// changer le style de la navbar pendant le scroll
+window.addEventListener('scroll', function() {
+    let navbar = document.querySelector('.navbar');
+    let scrollTop = window.scrollY;
 
-let timerInterval;
-let timeLeft;
-const timerDisplay = document.getElementById('timer-display');
-const form = document.getElementById('timer-form');
-
-// Function to format time (hh:mm:ss)
-function formatTime(seconds) {
-    const h = Math.floor(seconds / 3600).toString().padStart(2, '0');
-    const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
-    const s = (seconds % 60).toString().padStart(2, '0');
-    return `${h}:${m}:${s}`;
-}
-
-// Wait for the page load absolutly
-window.addEventListener('DOMContentLoaded', function() {
-    // Stmulate a click on the submit button after the load page
-    document.getElementById('But').click();
+    if (scrollTop > 100) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
 });
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
+ // JavaScript pour l'animation de texte typé
+ document.addEventListener('DOMContentLoaded', function () {
+      const typedStrings = ["Frontend", "Backend", "Full Stack"];
+      const typedElement = document.querySelector('.leH1');
+      
+      if (typedElement) {
+        let charIndex = 0;
+        let stringIndex = 0;
+        let typingEffect = setInterval(type, 250);
 
-    // Get input values for hours, minutes, and seconds
-    const hours = parseInt(document.getElementById('hours').value) || 0;
-    const minutes = parseInt(document.getElementById('minutes').value) || 0;
-    const seconds = parseInt(document.getElementById('seconds').value) || 0;
+        function type() {
+          if (stringIndex === typedStrings.length) {
+            stringIndex = 0;
+          }
 
-    // Convert total time to seconds
-    timeLeft = (hours * 3600) + (minutes * 60) + seconds; // Total time in seconds
-    if (timeLeft <= 0) return; // Don't start if time is zero
-
-    // Display the initial time
-    timerDisplay.textContent = formatTime(timeLeft);
-
-    // Start the countdown
-    timerInterval = setInterval(() => {
-        timeLeft--;
-        timerDisplay.textContent = formatTime(timeLeft);
-        
-        if (timeLeft <= 0) {
-            clearInterval(timerInterval);
-            alert("Time's up!");
+          if (charIndex < typedStrings[stringIndex].length) {
+            typedElement.textContent += typedStrings[stringIndex].charAt(charIndex);
+            charIndex++;
+          } else {
+            charIndex = 0;
+            stringIndex++;
+            typedElement.textContent = '';
+          }
         }
-    }, 1000);
+      }
+    });
 
-});
-        
-window.onload = function() {
-    form.addEventListener();
-};
+
+//-----------------------------------------------------------------------------------------
+
+    // Ajouter un événement de soumission du formulaire
+  //configuration
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêcher le rechargement de la page
+
+    // Récupérer les valeurs du formulaire
+    const nom = document.getElementById('name').value;
+    const prenom = document.getElementById('fisrt_name').value;
+    const email = document.getElementById('email').value;
+    const numero = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    const btn = document.getElementById('button');
+
+    btn.value = 'Envoie en cours...';
+
+
+    // code permettant de commencer à utiliser EmailJs
+    // (function(){
+    //     emailjs.init({
+    //       publicKey: "EEDry2HRfDUVp5Lgc",
+    //     });
+    // })();
+
+    //OU 
     
+    emailjs.init('EEDry2HRfDUVp5Lgc');
+    
+    // Configuration de l'email à envoyer via EmailJS
+    const templateParams = {
+      from_name: nom,
+      from_first_name: prenom,
+      from_email: email,
+      from_numero:numero,
+      message: message
+    };
 
+    // Envoyer l'email via EmailJS
+    emailjs.send('service_pxurp4g', 'template_w53adua', templateParams).then(
+      (response) => {
+        btn.value = 'Envoyé';
+        console.log('SUCCÈS!', response.status, response.text);
+      },
+      (error) => {
+        btn.value = 'Envoyé';
+        console.log('ÉCHEC...', error);
+      },
+    );
 
+  });
