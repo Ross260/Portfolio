@@ -81,6 +81,7 @@ window.addEventListener('scroll', function() {
       (response) => {
         btn.value = 'Envoyé';
         console.log('SUCCÈS!', response.status, response.text);
+        alert("Message envoyé !");
       },
       (error) => {
         btn.value = 'Envoyé';
