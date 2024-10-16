@@ -179,14 +179,15 @@
           <div class="row mb-3">
               <!-- Champ pour le prénom -->
               <div class="col-md-6">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+              </div>
+
+              <div class="col-md-6">
                   <label for="prenom" class="form-label">Prénom</label>
                   <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
               </div>
 
-              <div class="col-md-6">
-                  <label for="nom" class="form-label">Nom</label>
-                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
-              </div>
           </div>
 
           <div class="row mb-3">
@@ -200,7 +201,7 @@
               <label for="phone" class="form-label">Téléphone</label>
               <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
             </div>
-          
+
           </div>
           
           <div class="mb-3">
@@ -213,7 +214,7 @@
 
              <div class="col-md-5"></div>
              <div class="col-md-3" style="justify-content: center; align-items: center;">
-                 <button type="submit" class="btn btn-primary mb-4">Envoyer</button>
+                 <input type="submit" class="btn btn-primary mb-4" id="button" value="Envoyer" >
              </div>
              <div class="col-md-5"></div>
 
@@ -223,6 +224,57 @@
       </div>
     </div>
 </section>
+
+<script>
+  // Ajouter un événement de soumission du formulaire
+  //configuration
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêcher le rechargement de la page
+
+    // Récupérer les valeurs du formulaire
+    const nom = document.getElementById('name').value;
+    const prenom = document.getElementById('prenom').value;
+    const email = document.getElementById('email').value;
+    const numero = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    const btn = document.getElementById('button');
+
+    btn.value = 'Envoie en cours...';
+
+    // code permettant de commencer à utiliser EmailJs
+    // (function(){
+    //     emailjs.init({
+    //       publicKey: "EEDry2HRfDUVp5Lgc",
+    //     });
+    // })();
+
+    //OU 
+
+    emailjs.init('EEDry2HRfDUVp5Lgc');
+    
+    // Configuration de l'email à envoyer via EmailJS
+    const templateParams = {
+      from_name: nom,
+      from_email: email,
+      from_numero:numero,
+      message: message
+    };
+
+    // Envoyer l'email via EmailJS
+    emailjs.send('service_pxurp4g', 'template_w53adua', templateParams).then(
+      (response) => {
+        btn.value = 'Envoyé';
+        console.log('SUCCÈS!', response.status, response.text);
+      },
+      (error) => {
+        btn.value = 'Envoyé';
+        console.log('ÉCHEC...', error);
+      },
+    );
+
+  });
+
+</script>
 
 
 
@@ -250,7 +302,6 @@
               </li>
             </ul>
                 <p style="color:aliceblue; font-size: 15px;" class="text-center">&copy; 2024 My Portfolio. All Rights Reserved.</p>
-                
           </div>
 
           <div class="col-md-3">
@@ -266,16 +317,6 @@
      </div>
   </div>
 </footer>
-
-
-
-
-        
-
-
-
-
-
 
 
 <!-- Lien vers le fichier JavaScript AOS -->
