@@ -137,7 +137,11 @@
                         <div class="bg">
                           <img src="./images/projet1.png" alt="Gestion des clients" srcset="">
                           <p class="mb-4">Java</p>
-                          <button type="button" class="btn btn-primary">En savoir plus...</button>
+                          
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            En savoir plus...
+                          </button>
+
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -169,6 +173,37 @@
         </div>
     </div>
   </section>
+
+
+<!-- ----------------------------------------------------------------- -->
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+          <img src="https://i5.walmartimages.com/asr/464e9b58-e6aa-4828-a15c-15ae56db8570_1.8496acf944ba7e08ee4196c91e873aa4.jpeg" height="400px" width="400px" >
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- ----------------------------------------------------------------- -->
+
+
 
   <!-- More Content -->
 <section class="content-section-fluid mt-5" style="padding-top: 30px;" data-aos="zoom-in" id="contact">
