@@ -167,7 +167,10 @@
                         <div class="bg">
                             <img src="./images/pharma.png" class="img-fluid" alt="projet3" srcset="">
                             <p style="font-size: 15px;">HTML, CSS, JS, Bootstrap, PHP, SQL</p>
-                            <button type="button" class="btn btn-primary">En savoir plus...</button>
+                            
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#third_project_modal">
+                              En savoir plus...
+                            </button>
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -195,7 +198,7 @@
         <div class="modal-body">
           <i style="color: aliceblue;">Logiciel développé en JAVA donc le but est d'organiser et gérer les informations
              des clients. L'objectif étant de faciliter l'accès aux données relatives aux clients.</i>
-          <img src="./images/interface_projet1.PNG" height="400px" width="470px" >
+          <img src="./images/interface_projet1.PNG" class="img-fluid" height="400px" width="470px" >
         </div>
         
         <!-- Modal footer -->
@@ -221,8 +224,37 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          <i style="color: aliceblue;">Logiciel développé en Python permettant d'accéder en 1 clic à des sites webs précis.</i>
-          <img src="./images/interface_projet2.PNG" height="400px" width="470px" >
+          <i style="color: aliceblue;">Logiciel développé en Python permettant d'accéder en 1 clic à des sites webs précis. Modifiable à la demande</i>
+          <img src="./images/interface_projet2.PNG" class="img-fluid" height="400px" width="470px" >
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+  <!-- The Modal -->
+  <div class="modal fade" id="third_project_modal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark" style="opacity: 0.9;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: aliceblue;">PROPHARMA</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <i style="color: aliceblue;">Site web de gestion d'une pharmacie et de vente de médicament. Projet réalisé en classe de Tle</i>
+          <img src="./images/propharma.png" class="img-fluid" height="400px" width="470px" >
+          <i style="color: aliceblue;">Partie Admin de gestion des stocks, securisation avec chifrement de mot de passe et mise en place des sessions utilisateur en PHP</i>
+          <img src="./images/propharma_Gestion.png" class="img-fluid" height="400px" width="470px" >
         </div>
         
         <!-- Modal footer -->
