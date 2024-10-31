@@ -105,6 +105,7 @@
                   <img src="./images/github.PNG" class="img-fluid" alt="github"> 
                   <img src="./images/mysqlworkbench.PNG" class="img-fluid" alt="mysqlworkbench"> 
                   <img src="./images/pycharm.PNG" class="img-fluid" alt="pycharm"> 
+                  <img src="./images/Xampp.PNG" class="img-fluid" alt="xampp"> 
                   <p class="text-center mt-5" style="font-size: 20px;color:  #6239e8;"><b>Langages de programmation</b></p>
                   <img src="./images/html.png" class="img-fluid" alt="HTML">
                   <img src="./images/CSS.png"  class="img-fluid" alt="CSS">
@@ -136,7 +137,11 @@
                         <div class="bg">
                           <img src="./images/projet1.png" alt="Gestion des clients" srcset="">
                           <p class="mb-4">Java</p>
-                          <button type="button" class="btn btn-primary">En savoir plus...</button>
+                          
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#first_project_modal">
+                            En savoir plus...
+                          </button>
+
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -147,7 +152,11 @@
                         <div class="bg">
                             <img src="./images/projet2.png" class="img-fluid" alt="projet2" srcset="">
                             <p style="font-size: 20px;" class="mb-5">Python Tkinter</p>
-                            <button type="button" class="btn btn-primary">En savoir plus...</button>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#second_project_modal">
+                              En savoir plus...
+                            </button>
+
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -158,7 +167,10 @@
                         <div class="bg">
                             <img src="./images/pharma.png" class="img-fluid" alt="projet3" srcset="">
                             <p style="font-size: 15px;">HTML, CSS, JS, Bootstrap, PHP, SQL</p>
-                            <button type="button" class="btn btn-primary">En savoir plus...</button>
+                            
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#third_project_modal">
+                              En savoir plus...
+                            </button>
                         </div>
                         <div class="blob"></div>
                     </div>
@@ -169,10 +181,97 @@
     </div>
   </section>
 
+
+<!-- ----------------------------------------------------------------- -->
+  <!-- The Modal -->
+  <div class="modal fade" id="first_project_modal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark" style="opacity: 0.9;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: aliceblue;">Gestion des Clients</h4>
+          <button type="button" class="close" data-dismiss="modal" style="color: aliceblue;">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <i style="color: aliceblue;">Logiciel développé en JAVA donc le but est d'organiser et gérer les informations
+             des clients. L'objectif étant de faciliter l'accès aux données relatives aux clients.</i>
+          <img src="./images/interface_projet1.PNG" class="img-fluid" height="400px" width="470px" >
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------- -->
+ <!-- ----------------------------------------------------------------- -->
+  <!-- The Modal -->
+  <div class="modal fade" id="second_project_modal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark" style="opacity: 0.9;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: aliceblue;">FastLink</h4>
+          <button type="button" class="close" data-dismiss="modal" style="color: aliceblue;">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <i style="color: aliceblue;">Logiciel développé en Python permettant d'accéder en 1 clic à des sites webs précis. Modifiable à la demande</i>
+          <img src="./images/interface_projet2.PNG" class="img-fluid" height="400px" width="470px" >
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+  <!-- The Modal -->
+  <div class="modal fade" id="third_project_modal">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark" style="opacity: 0.9;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: aliceblue;">PROPHARMA</h4>
+          <button type="button" class="close" data-dismiss="modal" style="color: aliceblue;">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <i style="color: aliceblue;">Site web de gestion d'une pharmacie et de vente de médicaments. Projet réalisé en classe de Tle</i>
+          <img src="./images/propharma.png" class="img-fluid" height="400px" width="470px" ><br><br>
+          <i style="color: aliceblue;">Partie Admin de gestion des stocks, sécurisation avec chiffrement des identifiants et mise en place des sessions utilisateur en PHP.</i>
+          <img src="./images/propharma_Gestion.png" class="img-fluid" height="400px" width="470px" >
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- ----------------------------------------------------------------- -->
+
+
   <!-- More Content -->
 <section class="content-section-fluid mt-5" style="padding-top: 30px;" data-aos="zoom-in" id="contact">
     <div class="container mt-5">
-      <h2 class="mb-5 mt-5">Contact</h2>
+      <h2 class="mb-5 mt-5">Envoyez moi un message</h2>
 
       <div class="container-fluid">
         <!-- Le Formulaire -->
