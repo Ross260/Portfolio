@@ -1,281 +1,312 @@
-*{
-    font-family: 'Times New Roman', Times, serif    ;
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Initial Navbar and Section Style */
 .navbar-custom {
-    background-color: transparent;
-    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  background-color: transparent;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 .navbar-scrolled {
-    background-color: #3c3b3e;
-    box-shadow: 0 4px 10px rgba(59, 115, 178, 0.3);
-    opacity: 0.9;
+  background-color: #3c3b3e;
+  box-shadow: 0 4px 10px rgba(59, 115, 178, 0.3);
+  opacity: 0.9;
 }
 
 .navbar-custom .nav-link {
-    color: white;
-    transition: color 0.5s ease;
-    font-size: 20px;
+  color: white;
+  transition: color 0.5s ease;
+  font-size: 20px;
 }
 
 .navbar-scrolled .nav-link {
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 
 /* Full-height initial section */
 .header-section {
-    height: 100vh;
-    /* background-color: #6239e8; */
-    background: linear-gradient(35deg, #6239e8, #892fde); /* Dégradé du rouge vers l'orange */
-    color: white;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    
+  height: 100vh;
+  /* background-color: #6239e8; */
+  background: linear-gradient(
+    35deg,
+    #6239e8,
+    #892fde
+  ); /* Dégradé du rouge vers l'orange */
+  color: white;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .navbar-toggler {
-  border-color: rgba(106, 103, 103, 0.6); /* Border blanche autour du bouton */
-} 
-
-
+  border-color: rgba(106, 103, 103, 0.6); /* Border grise autour du bouton */
+}
 
 /* Some content section to scroll */
 .content-section {
-    height: 60vh;
-    background-color: #f7f7f7;
-    padding: 40px;
+  height: 60vh;
+  background-color: #f7f7f7;
+  padding: 40px;
 }
-#about{
-    margin: O;
+#about {
+  margin: O;
 }
 
 /* HEADER */
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-.firstp{
-    font-size: 40px;
+.firstp {
+  font-size: 40px;
 }
 
-.flex-contain{
-    display: flex;
-    padding: 20px;
-    margin-left: 30px;
-    justify-content: space-around;
- 
+.flex-contain {
+  display: flex;
+  padding: 20px;
+  margin-left: 30px;
+  justify-content: space-around;
 }
 
-.leH1{
-    font-size: 50px;
+.leH1 {
+  font-size: 50px;
 }
-
 
 .div1-flex {
-    width: 60%; /*la div sur la moitier de la largeur de l'écran*/
+  width: 60%; /*la div sur la moitier de la largeur de l'écran*/
 }
 
 /* animation sur le bouton de telechargement du CV */
 .section-btn {
-    animation: wiggle 4s linear infinite;
+  animation: wiggle 4s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
   }
-  
-  /* Keyframes */
-  @keyframes wiggle {
-    0%, 7% {
-      transform: rotateZ(0);
-    }
-    15% {
-      transform: rotateZ(-15deg);
-    }
-    20% {
-      transform: rotateZ(10deg);
-    }
-    25% {
-      transform: rotateZ(-10deg);
-    }
-    30% {
-      transform: rotateZ(6deg);
-    }
-    35% {
-      transform: rotateZ(-4deg);
-    }
-    40%, 100% {
-      transform: rotateZ(0);
-    }
+  15% {
+    transform: rotateZ(-15deg);
   }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
 
 .section-btn:hover,
 .section-btn:focus {
-    background:rgb(231, 110, 44);
-    border-color: transparent;
-    color: #fff;
-    border-radius: 20px;
+  background: rgb(231, 110, 44);
+  border-color: transparent;
+  color: #fff;
+  border-radius: 20px;
 
-    width: 240px;
-  }
-
-
-  /* exemple de button */
-  /* From Uiverse.io by SujitAdroja */ 
-.section-btn {
-    color: rgb(231, 110, 44);
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 2px solid  rgb(231, 110, 44);
-    padding: 10px 20px;
-    font-size: 17px;
-    cursor: pointer;
-    font-weight: bold;
-    background: transparent;
-    position: relative;
-    transition: all 1s;
-    overflow: hidden;
+  width: 240px;
 }
-  
 
+/* exemple de button */
+/* From Uiverse.io by SujitAdroja */
+.section-btn {
+  color: rgb(231, 110, 44);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(231, 110, 44);
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
 
 /* ---------------------------------- 
 content outside the header
 ---------------------------------- */
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 
-h2{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: #6239e8;
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #6239e8;
 }
- 
-  /* About me */
 
-  /* Tools */
- 
-  .divDesDiv > img{
-    height: 5Opx;
-    width: 70px;
-    margin-left: 30px;
-  }
+/* About me */
 
-   /* Projects */
+/* Tools */
 
-   /* Cards */
-   /* From Uiverse.io by dylanharriscameron */ 
+.divDesDiv > img {
+  height: 5Opx;
+  width: 70px;
+  margin-left: 30px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Projects */
+
+/* Cards */
 .card {
-    position: relative;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: white;
+  margin: 10px;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 290px;
+  height: 490px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: 30%;
+  width: 190px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  opacity: 0.8;
+  filter: blur(12px);
+  animation: blob-bounce 6s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-50%, -50%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate3d(0, 0, 0);
+  }
+}
+
+/* style sur les cartes */
+.cards-row {
+  justify-content: center; /* Pour centrer les cartes*/
+}
+
+/* .card > img{
     width: 200px;
-    height: 250px;
-    border-radius: 14px;
-    z-index: 1111;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    ;
-  }
-  
-  .bg {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 190px;
-    height: 240px;
-    z-index: 2;
-    background: rgba(255, 255, 255, .95);
-    backdrop-filter: blur(24px);
-    border-radius: 10px;
-    overflow: hidden;
-    outline: 2px solid white;
-  }
-  
-  .blob {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #c25edd;
-    opacity: 1;
-    filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
-  }
-  
-  @keyframes blob-bounce {
-    0% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  
-    25% {
-      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-  
-    50% {
-      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-  
-    75% {
-      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-  
-    100% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  }
-  
-  /* style sur les cartes */
-  .cards-row{
-    justify-content: center; /* Pour centrer les cartes*/
-  }
+  } */
 
-  .bg > img{
-    width: 200px;
-  }
+.card-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  z-index: 3;
+}
 
-  /* Contact */
-  label{
-    color: #6239e8;
-    font-size: 20px;
-  }
+.content {
+  text-align: center;
+  padding: 15px;
+  z-index: 4;
+}
 
-  #contact{
-    background: linear-gradient(35deg, #f3fbfd, #f6f4ff); /* Dégradé du rouge vers l'orange */
- 
-  }
+.date {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
 
-  /* Footer */
-  .content-section-footer{
-    height: auto;
-    width: auto;
-    background: #3c3b3e;
-  }
+.description {
+  font-size: 14px;
+  color: #555;
+}
 
-  .navbar-nav-footer {
-    list-style-type: none; /* Supprimer les puces de liste */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Pour aligner les items en ligne */
-  }
+/* Le hover de la card */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
 
-  .navbar-nav-footer .nav-item {
-    margin-right: 15px; /* Ajouter un espace entre les éléments */
-    font-size: 20px;
-  }
-  .navbar-nav-footer .nav-item .nav-link{
-    color: #785def;
-  }
+.card:hover {
+  transform: scale(1.05);
+}
 
 
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Contact */
+label {
+  color: #6239e8;
+  font-size: 20px;
+}
 
+#contact {
+  background: linear-gradient(
+    35deg,
+    #f3fbfd,
+    #f6f4ff
+  ); /* Dégradé du rouge vers l'orange */
+}
+
+/* Footer */
+.content-section-footer {
+  height: auto;
+  width: auto;
+  background: #3c3b3e;
+}
+
+.navbar-nav-footer {
+  list-style-type: none; /* Supprimer les puces de liste */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Pour aligner les items en ligne */
+}
+
+.navbar-nav-footer .nav-item {
+  margin-right: 15px; /* Ajouter un espace entre les éléments */
+  font-size: 20px;
+}
+.navbar-nav-footer .nav-item .nav-link {
+  color: #785def;
+}
