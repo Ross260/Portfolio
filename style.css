@@ -243,26 +243,23 @@ h2 {
 /* style sur les cartes */
 .cards-row {
   justify-content: center; /* Pour centrer les cartes*/
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
 }
 
 /* Ajoutez ceci dans votre fichier CSS */
-.cards-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
 
-.my-card {
-  flex: 1 1 45%; /* Assure que les cartes occupent 45% de la largeur sur grands écrans */
-  margin: 10px;
-}
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+
+  .cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
   .my-card {
-      width: 90%;
+    flex: 1 1 45%; /* Assure que les cartes occupent 45% de la largeur sur grands écrans */
+    margin: 10px;
+    width: 100%;
       margin-bottom: 20px;
   }
 }
