@@ -30,7 +30,7 @@ Passionné(e) par le développement et la création de solutions digitales, j’
 📧 **Email :** [ketchaross@gmail.com](mailto:ketchaross@gmail.com)  
 💼 **LinkedIn :** [KETCHA Ross ](https://www.linkedin.com/in/ross-gildas-ketcha-a39a172b0/)  
 
-Vous pouvez également me contacter depuis mon portfolio à partir du formulaire de contact tout en dessous 😉
+Vous pouvez également me contacter depuis mon portfolio à partir du formulaire de contact 😉
 
 ---
 
