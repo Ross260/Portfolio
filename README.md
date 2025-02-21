@@ -13,7 +13,7 @@ Passionné(e) par le développement et la création de solutions digitales, j’
 
 ## 📂 Projets
 ### 🌐 [BiblioSmart](https://github.com/Ross260/Bibliotheque)
-📌 **Description :** Bibliothèque en ligne avec réservation, emprunt et restitution de livres depuis une banque de livres en ligne.
+📌 **Description :** Bibliothèque en ligne avec réservation, emprunt et restitution de livres depuis une banque de livres.
 
 🛠 **Technologies utilisées :** HTML, CSS, JavaScript, PHP, SQL, Bootstrap, MySQL  
 
