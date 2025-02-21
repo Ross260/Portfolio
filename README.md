@@ -1,15 +1,15 @@
 # 🌟 Mon Portfolio 
 
-Bienvenue sur mon portfolio ! Ici, vous trouverez une sélection de mes projets, compétences et expériences. Mon objectif est de créer des solutions innovantes et performantes.
+Bienvenue sur mon portfolio ! Ici, vous trouverez une sélection de mes projets et compétences. Mon objectif est de créer des solutions innovantes et performantes.
 
 ## 🚀 À propos de moi
-Passionné(e) par le développement et la création de solutions digitales, j’aime relever des défis techniques et explorer de nouvelles technologies. Mon expertise couvre plusieurs domaines, allant du **développement web** à la **gestion de projets**.
+Passionné par le développement et la création de solutions digitales, j’aime relever des défis techniques et explorer de nouvelles technologies. Mon expertise couvre plusieurs domaines, allant du **développement web**,**gestion de projets**  à des notions en  **Science de donnée**.
 
 ## 🔥 Compétences
-- 💻 **Langages** : HTML, CSS, JavaScript,PHP,SQL,Python.
-- 🎨 **Frameworks & Libraries** : Bootstrap, Tailwind CSS
+- 💻 **Langages** : HTML, CSS, JavaScript,PHP,SQL,Python,Java.
+- 🎨 **Frameworks & Libraries** : Bootstrap, Tailwind CSS.
 - 🛠 **Outils & Technologies** : Git, GitHub, VS Code, Pycharm.
-- ⚡ **Autres** : UX/UI Design, Responsive Design, SEO
+- ⚡ **Autres** : UX/UI Design, Responsive Design, SEO.
 
 ## 📂 Projets
 ### 🌐 [BiblioSmart](https://github.com/Ross260/Bibliotheque)
