@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📊 Web Scraping - Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .header-img {
+      background: url('../images/visualisation/scrap.png') center/cover no-repeat;
+      height: 250px;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-title {
+      background-color: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    pre {
+      position: relative;
+      background-color: #c9d7e9;
+      color: #141516;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2), inset 4px 4px 8px rgba(255, 255, 255, 0.3);
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 0.8rem;
+    }
+    h2{
+      margin-bottom: 30px;
+      margin-top: 50px;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 40px;
+      color: #6239e8;
+    }
+    .bd-img{
+      background: url('/images/visualisation/bd_scraping.png') center/cover no-repeat;
+      height: 470px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 EN-TÊTE -->
+  <div class="header-img">
+    <div class="header-title">Projet de Web Scraping et Analyse des Données d'un site ecommerce avec Python</div>
+  </div>
+
+  <div class="container my-5">
+
+    <h2>Description du projet</h2>
+    <p>
+      Ce projet est un outil complet de <strong>scraping web</strong> et <strong>d'analyse de données</strong> utilisant <strong>Python, BeautifulSoup, pandas, Matplotlib</strong> et <strong>MySQL</strong>. Il permet de récupérer, stocker, analyser et visualiser des données produits à partir de sites e-commerce : cas de <b>Books to Scrape(Site de ventre de livres)</b>.
+    </p>
+
+    <h2>Fonctionnalités principales</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">✅ Scraping Web (nom, prix, catégorie, avis, lien vers les livres)</li>
+      <li class="list-group-item">✅ Stockage dans une base MySQL</li>
+      <li class="list-group-item">✅ Nettoyage & enrichissement des données</li>
+      <li class="list-group-item">✅ Visualisation via matplotlib / seaborn</li>
+      <li class="list-group-item">✅ Export CSV</li>
+    </ul>
+
+    <hr>
+
+    <h2>Installation</h2>
+
+    <h4>1. Cloner le dépôt</h4>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>git clone https://github.com/Ross260/SPRINT_DATA_FINAL_PROJET.git</code></pre>
+
+    <h4>2. Installer les dépendances</h4>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>pip install -r requirements.txt</code></pre>
+
+    <h4>3. Créer la base de données</h4>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button>
+      <code>
+        CREATE DATABASE ecommerce_scraping;
+        USE ecommerce_scraping;
+
+        CREATE TABLE produits (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          nom VARCHAR(255),
+          prix DECIMAL(10,2),
+          categorie VARCHAR(255),
+          avis VARCHAR(50),
+          lien TEXT
+        );
+      </code>
+    </pre>
+
+    <h4>4. Configuration de connexion</h4>
+    <p>Dans le fichier <code>config.py</code> :</p>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>DB_CONFIG = {
+        "host": "localhost",
+        "user": "hostname",
+        "password": "your_password",
+        "database": "ecommerce_scraping"
+      }</code>
+    </pre>
+
+    <hr>
+
+    <h2>Utilisation & Résultats</h2>
+
+    <h4>Lancer le scraping</h4>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>python main.py</code></pre>
+
+    <h4 style="margin-top: 30px;">Aperçu de la base de données après exécution du script</h4>
+    <p>Après exécution du script, un premier filtrage des données est appliqué avant le stockage en base de donnée</p>
+    <div class="bd-img"></div>
+
+
+    <h4>Nettoyage des données</h4>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>python nettoyage.py</code></pre>
+    <p>Aperçu des premières ligne du dataframe après exécution du script: </p>
+    <img src="/images/visualisation/apercu_dataframe.png" alt="">
+    <p style="margin-top: 20px;">Après exécution du script, les données sont récupérer en base de données, néttoyées et dans le but de rendre les donnée pertinente pour l'analyse, des colonnes sont ajouter au dataframe et ensuite il y a un stockage en CSV </p>
+
+    <hr>
+
+    <h2>Visualisation</h2>
+    <ul>
+      <li>📈 Répartition des prix</li>
+      <li>📊 Produits par catégorie</li>
+      <li>🔎 Corrélation prix / avis</li>
+      <li>⏳ Évolution des prix</li>
+    </ul>
+
+    <h4>Générer les graphiques de visualisation :</h4>
+    <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>python visualisation.py</code></pre>
+
+    
+    <img src="/images/visualisation/prix_produits.png" alt="">
+    <p></p>
+    <img src="/images/visualisation/pie.png" alt="">
+    <img src="/images/visualisation/img_3.png" alt="">
+    <img src="/images/visualisation/img_2.png" alt="">
+    <img src="/images/visualisation/top.png" alt="" height="600" width="80%">
+    <hr>
+
+
+  </div>
+
+  <script>
+    function copyCode(btn) {
+      const code = btn.nextElementSibling.innerText;
+      navigator.clipboard.writeText(code);
+      btn.innerText = "Copié ✅";
+      setTimeout(() => { btn.innerText = "Copier" }, 2000);
+    }
+  </script>
+
+</body>
+</html>
