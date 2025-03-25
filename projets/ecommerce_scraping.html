@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>📊 Web Scraping - Documentation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       background-color: #f8f9fa;
@@ -104,18 +105,17 @@
   </style>
 </head>
 <body>
-  <a href="../index.html" class="btn-fixe">
-    Retour
-  </a>
-  
-
-  <!-- 🔹 EN-TÊTE -->
+    
   <div class="header-img">
     <div class="header-title">Projet de Web Scraping et Analyse des Données d'un site ecommerce avec Python</div>
   </div>
 
   <div class="container my-5">
+    <a href="../index.html#projects" class="btn-fixe">
+      Retour
+    </a> 
 
+    
     <h2>Description du projet</h2>
     <p>
       Ce projet est un outil complet de <strong>scraping web</strong> et <strong>d'analyse de données</strong> utilisant <strong>Python, BeautifulSoup, pandas, Matplotlib</strong> et <strong>MySQL</strong>. Il permet de récupérer, stocker, analyser et visualiser des données produits à partir de sites e-commerce : cas de <b>Books to Scrape(Site de ventre de livres)</b>.
@@ -130,6 +130,12 @@
       <li class="list-group-item">✅ Export CSV</li>
     </ul>
 
+    <p style="font-size: 20px;">
+      Accéder au code source du projet : 
+      <a href="https://github.com/Ross260/SPRINT_DATA_FINAL_PROJET" >
+        <i class="fa fa-arrow-circle-right fa-2x" style="height: 30px; width: 30px;"></i>
+      </a>
+    </p>
     <hr>
 
     <h2>Installation</h2>
@@ -182,7 +188,7 @@
     <h4>Nettoyage des données</h4>
     <pre><button class="btn btn-sm btn-light copy-btn" onclick="copyCode(this)">Copier</button><code>python nettoyage.py</code></pre>
     <p>Aperçu des premières ligne du dataframe après exécution du script: </p>
-    <img src="/images/visualisation/apercu_dataframe.png" alt="">
+    <img src="../images/visualisation/apercu_dataframe.png" alt="">
     <p style="margin-top: 20px;">Après exécution du script, les données sont récupérer en base de données, néttoyées et dans le but de rendre les donnée pertinente pour l'analyse, des colonnes sont ajouter au dataframe et ensuite il y a un stockage en CSV </p>
 
     <hr>

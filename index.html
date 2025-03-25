@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     
 </head>
@@ -163,18 +166,74 @@
       <div class="col-md-5 mr-2 ml-2 mb-5 col-sm-12 d-flex justify-content-center">
         <embed src="./media/certifs/Examen Final Python pour la Data Science.pdf" width="800" height="300" type="application/pdf">
       </div>
-  </div>
+    </div>
 
   
 
+
+
+
+
+
+
+
+
+
     <h2 class="mb-5 mt-5 ">Projets </h2>
+
     <div class="row justify-content-center">
+
+      <h3 style="margin-top: 40px;">Projets Data</h3>
 
       <div class="col-md-4 col-sm-12 d-flex justify-content-center">
         <div class="card">
           <div class="bg"></div>
           <div class="blob"></div>
-          <img src="./images/project_img/livre.png" alt="Gestion d'une pharmacie en ligne" class="card-image">
+          <img src="./images/visualisation/scraping.png" alt="Scraping web" class="card-image">
+          <div class="content">
+            <p class="date">Mars 2025</p>
+            <h4>Scraping site ecommerce</h4>
+            <p class="description">
+              <b>Python;</b>  Bibliothèques utilisées : <b>Resquest, BeautifulSoup, Panda, Matplotlib</b>
+            </p>
+            <a href="/projets/ecommerce_scraping.html">
+              <button type="button" class="btn btn-outline-primary">
+                Détail sur le projet <i class="fa fa-arrow-circle-right" height="30px"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="./images/scrapping.png" alt="Scraping web" class="card-image">
+          <div class="content">
+            <p class="date">Février 2025</p>
+            <h4>Scraping site de logement</h4>
+            <p class="description">
+              <b>Python;</b>  Bibliothèques utilisées : <b>Resquest, BeautifulSoup, Selenium</b>
+            </p>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#seventh_project_modal">
+              En savoir plus...
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+
+      <h3 style="margin: 40px;">Projets Web</h3>
+
+      <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="./images/project_img/livre.png" alt="Gestion d'une Bibliotheque en ligne" class="card-image">
           <div class="content">
             <p class="date">Novembre 2024</p>
             <h4>Bibliotheque en ligne</h4>
@@ -193,7 +252,7 @@
         <div class="card">
           <div class="bg"></div>
           <div class="blob"></div>
-          <img src="./images/project_img/qcm_icon.PNG" alt="Gestion des étudiants" class="card-image">
+          <img src="./images/project_img/qcm_icon.PNG" alt="image qcm" class="card-image">
           <div class="content">
             <p class="date"> Novembre 2024</p>
             <h4>QCM Aléatoire</h4>
@@ -212,7 +271,7 @@
         <div class="card">
           <div class="bg"></div>
           <div class="blob"></div>
-          <img src="./images/project_img/logos.png" alt="Gestion des étudiants" class="card-image">
+          <img src="./images/project_img/logos.png" alt="image couture du monde" class="card-image">
           <div class="content">
             <p class="date"> janvier 2024 - Mars 2024</p>
             <h4>Couture du monde</h4>
@@ -226,6 +285,31 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="./images/pharma.png" alt="Gestion d'une pharmacie en ligne" class="card-image">
+          <div class="content">
+            <p class="date">Novembre 2021 - Avril 2022</p>
+            <h4>Pharmacie en ligne</h4>
+            <p class="description">
+              Gestion d'une pharmacie en ligne
+              <b>HTML, CSS, JS, Bootstrap, PHP, SQL</b>
+            </p>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#third_project_modal">
+              En savoir plus...
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+
+      <h3 style="margin: 40px;">Projets Logiciel</h3>
 
       <div class="col-md-4 col-sm-12 d-flex justify-content-center">
         <div class="card">
@@ -261,45 +345,9 @@
             </button>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-        <div class="card">
-          <div class="bg"></div>
-          <div class="blob"></div>
-          <img src="./images/pharma.png" alt="Gestion d'une pharmacie en ligne" class="card-image">
-          <div class="content">
-            <p class="date">Novembre 2021 - Avril 2022</p>
-            <h4>Pharmacie en ligne</h4>
-            <p class="description">
-              Gestion d'une pharmacie en ligne
-              <b>HTML, CSS, JS, Bootstrap, PHP, SQL</b>
-            </p>
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#third_project_modal">
-              En savoir plus...
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-        <div class="card">
-          <div class="bg"></div>
-          <div class="blob"></div>
-          <img src="./images/scrapping.png" alt="Gestion d'une pharmacie en ligne" class="card-image">
-          <div class="content">
-            <p class="date">Février 2025</p>
-            <h4>Scraping Web</h4>
-            <p class="description">
-              <b>Python;</b>  Bibliothèques utilisées : <b>Resquest, BeautifulSoup, Selenium</b>
-            </p>
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#seventh_project_modal">
-              En savoir plus...
-            </button>
-          </div>
-        </div>
-      </div>
+      </div>  
     </div>
+
   </div>
 </section>
 

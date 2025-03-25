@@ -28,11 +28,7 @@
 .header-section {
   height: 100vh;
   /* background-color: #6239e8; */
-  background: linear-gradient(
-    35deg,
-    #6239e8,
-    #892fde
-  ); /* Dégradé du rouge vers l'orange */
+  background: linear-gradient(135deg, #8a2be2, #4a89af);
   color: white;
   display: flex;
   /* justify-content: center; */
