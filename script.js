@@ -12,7 +12,7 @@ window.addEventListener('scroll', function() {
 
  // JavaScript pour l'animation de texte typé
  document.addEventListener('DOMContentLoaded', function () {
-      const typedStrings = ["Frontend", "Backend", "Full Stack"];
+      const typedStrings = ["Engineer", "Analyst", "Scientist"];
       const typedElement = document.querySelector('.leH1');
       
       if (typedElement) {
