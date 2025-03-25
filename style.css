@@ -312,6 +312,7 @@ label {
   color: #785def;
 }
 
+/* le New pour les nouveaux projets*/
 .clignote {
   animation: flash 1s infinite;
 }
